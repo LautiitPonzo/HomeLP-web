@@ -1,0 +1,60 @@
+.about-us{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.about-us-content{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    line-height: 2.5rem;
+    margin-top: 10%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 10%;
+    color: #767676;
+    font-size: 1.3rem;
+}
+
+.about-us-seccion2{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+
+    .image-png{
+        img{
+            width: 70%;
+            height: auto;
+        }
+    }
+
+    .buyHouse{
+       @include cardAbout();
+
+        h4{
+            font-family: $textos-font;
+            font-size: 1.5rem;
+            font-weight: normal;
+        }
+
+        p{
+            padding: 1rem 2rem;
+            font-family: $textos-font;
+        }
+    }
+
+    .rentHouse{
+        @include cardAbout();
+
+        h4{
+            @include cardh4();
+        }
+
+        p{
+            padding: 1rem 2rem;
+            font-family: $textos-font;
+        }
+    }
+}

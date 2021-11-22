@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Poppins:wght@300;400;700&display=swap');
+
+
+@import './base/colores';
+@import './base/variables';
+@import './base/mixin';
+@import 'components/header';
+@import 'components/main-section';
+@import 'components/about';
+@import 'components/contact';
+@import 'components/footer';
+@import 'components/property-card';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

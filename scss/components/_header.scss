@@ -1,0 +1,159 @@
+// HEADER NAV STYLES-------->
+
+.nav-bar{
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    .logo{
+        font-size: 2.5rem;
+        font-family: $logo-font;
+        color: $color-text;
+
+        a{
+            padding: 0 .8rem;
+            text-decoration: none;
+        }
+    }
+
+}
+
+#navbarSupportedContent{
+
+    .nav-item{
+        a{
+        font-family: $textos-font;
+        color: $color-text;
+        font-size: 1.2rem;
+
+        &:hover{
+            text-decoration: underline;
+            color: $color-text;
+        }
+        }
+    }
+
+    .dropdown-menu{
+        background-color: rgba(0, 0, 0, 0.3);
+        a{
+            &:hover{
+                background: rgba(0, 0, 0, 0.357);
+            }
+        }
+    }
+}
+
+
+.underline-style{
+    position: relative;
+    &:hover{
+        transform: scale(1, 1);
+    
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 0.1rem;
+            left: 0;
+            bottom: 0;
+            background: #FFFFFF;
+            transform: scale(0, 1);
+            transition: transform 0.3s ease;
+        }
+    }
+}
+
+// END HEADER NAV STYLES-------->
+
+// SECOND NAV HEADER STYLE
+
+.nav-content{
+    width: 100%;
+    display: flex;
+    background-color: rgba(167, 167, 167, 0.131);
+
+    .logo{
+        font-size: 2.5rem;
+        font-family: $logo-font;
+        color: $footer-color;
+
+        a{
+            padding: 0 .8rem;
+            text-decoration: none;
+        }
+    }
+
+    #navbarSupportedContent{
+
+        .nav-item{
+            a{
+            font-family: $textos-font;
+            color: $footer-color;
+            font-size: 1.2rem;
+            }
+        }
+    
+        .navDropdown{
+            background-color: rgb(245, 245, 245);
+        }
+    }
+
+}
+
+// SECOND NAV HEADER STYLE END
+
+
+// HEADER CAROUSEL AND TEXT STYLES-------------->
+
+.carousel-inner{
+    img{
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+}
+
+
+
+.main-title{
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    bottom: 50%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 60vw;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    animation-name: move;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    a{
+        text-decoration: none;
+        h1{
+            font-family: $textos-font;
+            font-size: 3em;
+            color: $color-text;
+        }
+    }    
+}
+
+@keyframes move{
+    0%{
+        transform: translateY(0%);
+    }
+
+    100%{
+        transform: translateY(20%);
+    }
+}
+
+// HEADER CAROUSEL AND TEXT STYLES END-------------->

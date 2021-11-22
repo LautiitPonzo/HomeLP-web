@@ -1,0 +1,66 @@
+.search-content{
+
+    .select-ubication{
+        .select-box{
+            background: #e6e6e6;
+            width: 10%;
+            justify-content: space-between;
+        }
+        .title-search-section{
+            font-size: 1.8rem;
+        }
+    }
+}
+
+// SECCION TIPOS DE PROPIEDADES
+
+.property-type-title{
+    font-family: $textos-font;
+    font-weight: normal;
+    margin: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.property-col{
+    width: 100%;
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+
+    .property-col-content{
+        
+        img{
+        width: 300px;
+        height: 250px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    }
+
+    .icon-feature{
+        span{
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+    }
+
+    .icon-features{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 10px;
+        margin-top: 5px;
+        margin-bottom: 5rem;
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .property-col{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+// FIN SECCION TIPOS DE PROPIEDADES

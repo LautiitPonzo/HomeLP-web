@@ -1,0 +1,42 @@
+
+.col-wrap{
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-sizing: border-box;
+    gap: 10px;
+    width: 80%;
+
+    .style-border{
+        text-align: center;
+        img{
+            width: 300px;
+            height: 300px;
+            padding: 20px 0;
+            border-radius: 20px; 
+        }
+    }
+}
+.style-border{
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin: 10px;
+
+    .button{
+        justify-content: center;
+        background: linear-gradient(90deg, #497CFF, #7e00fd60);
+        color: $color-text;
+        font-size: 1.5rem;
+        text-decoration: none;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 5px 10px;
+
+    }
+}
+
+.second-icon-features{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
