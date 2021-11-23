@@ -125,6 +125,28 @@
   font-size: 1.8rem;
 }
 
+.new-property .clearfix {
+  border: 1px solid #000;
+  margin: 0 4rem;
+  border-radius: 10px;
+}
+.new-property .clearfix img {
+  width: 450px;
+  border-radius: 10px;
+  float: right;
+  margin: 1.8rem 0;
+}
+.new-property .clearfix .newProperty-content {
+  display: inline;
+}
+.new-property .clearfix .newProperty-content .property-info {
+  display: flex;
+  gap: 15px;
+}
+.new-property .clearfix .newProperty-content .property-info li {
+  list-style-type: none;
+}
+
 .property-type-title {
   font-family: Poppins;
   font-weight: normal;
@@ -165,10 +187,19 @@
     flex-wrap: wrap;
   }
 }
-.about-us {
-  margin-top: 2rem;
+.head-title {
   text-align: center;
-  font-size: 2rem;
+  padding: 1.5rem 0;
+}
+.head-title span {
+  font-size: 1.8rem;
+  background: rgba(0, 0, 0, 0.782);
+  color: #f3f3f3;
+  border-radius: 0.5rem;
+  padding: 0.2rem 1rem;
+}
+.head-title .space {
+  background: none;
 }
 
 .about-us-content {

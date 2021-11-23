@@ -12,6 +12,34 @@
     }
 }
 
+// SECCION ACERCA DE NUEVA PROPIEDAD
+.new-property
+.clearfix{
+    border: 1px solid #000;
+    margin: 0 4rem;
+    border-radius: 10px;
+    
+    img{
+        width: 450px;
+        border-radius: 10px;
+        float: right;
+        margin: 1.8rem 0;
+    }
+
+    .newProperty-content{
+        display: inline;
+
+        .property-info{
+            display: flex;
+            gap: 15px;
+
+            li{
+                list-style-type: none;
+            }
+        }
+    }
+}
+
 // SECCION TIPOS DE PROPIEDADES
 
 .property-type-title{

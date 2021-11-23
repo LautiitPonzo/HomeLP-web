@@ -1,7 +1,17 @@
-.about-us{
-    margin-top: 2rem;
+.head-title{
     text-align: center;
-    font-size: 2rem;
+    padding: 1.5rem 0;
+    span{
+        font-size: 1.8rem;
+        background:  rgba(0, 0, 0, 0.782);
+        color: $color-text;
+        border-radius: .5rem;
+        padding: .2rem 1rem;
+
+    }
+    .space{
+        background: none;
+    }
 }
 
 .about-us-content{
