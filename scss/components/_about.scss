@@ -1,6 +1,7 @@
 .head-title{
     text-align: center;
     padding: 1.5rem 0;
+    margin-top: 5%;
     span{
         font-size: 1.8rem;
         background:  rgba(0, 0, 0, 0.782);
@@ -15,21 +16,33 @@
 }
 
 .about-us-content{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.186), 0px 0px 80px rgba(0, 0, 0, 0.185);
+    border-radius: 20px;
     display: flex;
-    text-align: center;
-    justify-content: center;
-    line-height: 2.5rem;
-    margin-top: 10%;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 10%;
-    color: #767676;
-    font-size: 1.3rem;
+    margin: 5% 3.2rem;
+    background-image: url('../../src/imagenes/wave.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-color: rgba(220, 220, 220, 0.385);
+    
+    .about-us-paragraph{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        line-height: 2.5rem;
+        padding-top: 5%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-bottom: 5%;
+        color: #000;
+        font-size: 1.3rem;
+    }
 }
 
 .about-us-seccion2{
     display: grid;
     width: 100%;
+    margin-top: 10%;
     justify-content: center;
     text-align: center;
 
