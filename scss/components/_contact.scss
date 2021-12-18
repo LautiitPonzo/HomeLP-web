@@ -1,82 +1,92 @@
-.title-contact{
-    background: #4d80e4;
-    height: 4rem;
-    border-radius: 13px 0 13px 0;
-    margin-bottom: 1.4rem;
-    h1{
-        color: #F3F3F3;
-    }
-}
+.form{
+	background-image: url('../../src/imagenes/fondo-form-contact.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 
-.text-black {
-	color: #000;
-}
-.content {
-	padding: 7rem 0;
-}
 
-.heading {
-	font-size: 2.5rem;
-	font-weight: 900;
-}
-.form-control {
-	border: none;
-	border-bottom: 1px solid #ccc;
-	padding-left: 0;
-	padding-right: 0;
-	border-radius: 0;
-	background: none;
-	&:active, &:focus {
-		outline: none;
-		box-shadow: none;
-		border-color: #000;
-	}
-}
-.col-form-label {
-	color: #000;
-	font-size: 13px;
-}
-.btn, .form-control, .custom-select {
-	height: 45px;
-	border-radius: 0;
-}
-.custom-select {
-
-	&:active, &:focus {
-		outline: none;
-		box-shadow: none;
-		border-color: #000;
-	}
-}
-
-.btn {
-	border: none;
-	border-radius: 0;
-	font-size: 11px;
-	letter-spacing: .2rem;
-	text-transform: uppercase;
-	border-radius: 13px 0 13px 0!important;
-	&.btn-primary {
-		border-radius: 30px;
+	.title-contact{
 		background: #4d80e4;
-		color: #FFFFFF;
-        font-weight: bold;
-	}
-}
-
-.contact-wrap {
-	box-shadow: 0 0px 20px 0 rgba(#000, .2);
-	background: #FFFFFF;
-    border-radius: 10px 0 10px 0;
-	.col-form-label {
-		font-size: 14px;
-		color: #000;
-		margin: 0 0 10px 0;
-		display: inline-block;
-		padding: 0;
+		height: 4rem;
+		border-radius: 13px 0 13px 0;
+		margin-bottom: 1.4rem;
+		h1{
+			color: #F3F3F3;
+		}
 	}
 	
+	.text-black {
+		color: #000;
+	}
+	.content {
+		padding: 7rem 0;
+	}
+	
+	.heading {
+		font-size: 2.5rem;
+		font-weight: 900;
+	}
+	.form-control {
+		border: none;
+		border-bottom: 1px solid #ccc;
+		padding-left: 0;
+		padding-right: 0;
+		border-radius: 0;
+		background: none;
+		&:active, &:focus {
+			outline: none;
+			box-shadow: none;
+			border-color: #000;
+		}
+	}
+	.col-form-label {
+		color: #000;
+		font-size: 13px;
+	}
+	.btn, .form-control, .custom-select {
+		height: 45px;
+		border-radius: 0;
+	}
+	.custom-select {
+	
+		&:active, &:focus {
+			outline: none;
+			box-shadow: none;
+			border-color: #000;
+		}
+	}
+	
+	.btn {
+		border: none;
+		border-radius: 0;
+		font-size: 11px;
+		letter-spacing: .2rem;
+		text-transform: uppercase;
+		border-radius: 13px 0 13px 0!important;
+		&.btn-primary {
+			border-radius: 30px;
+			background: #4d80e4;
+			color: #FFFFFF;
+			font-weight: bold;
+		}
+	}
+	
+	.contact-wrap {
+		box-shadow: 0 0px 20px 0 rgba(#000, .2);
+		background: #FFFFFF;
+		border-radius: 10px 0 10px 0;
+		.col-form-label {
+			font-size: 14px;
+			color: #000;
+			margin: 0 0 10px 0;
+			display: inline-block;
+			padding: 0;
+		}
+	}
 }
+
+
+
 
 .form-group{
 ::placeholder{

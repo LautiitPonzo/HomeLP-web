@@ -16,3 +16,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html{
+    &::-webkit-scrollbar{
+        width: .8rem;
+    }
+    &::-webkit-scrollbar-track{
+        background: transparent;
+    }
+    &::-webkit-scrollbar-thumb{
+        background: #e9e9e9e9;
+    }
+}

@@ -6,6 +6,7 @@
     width: 100%;
     display: flex;
     background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
 
     .logo{
         font-size: 2.5rem;
@@ -45,25 +46,6 @@
     }
 }
 
-
-.underline-style{
-    position: relative;
-    &:hover{
-        transform: scale(1, 1);
-    
-        &::after{
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 0.1rem;
-            left: 0;
-            bottom: 0;
-            background: #FFFFFF;
-            transform: scale(0, 1);
-            transition: transform 0.3s ease;
-        }
-    }
-}
 
 // END HEADER NAV STYLES-------->
 
@@ -115,36 +97,39 @@
         background-repeat: no-repeat;
         object-fit: cover;
     }
+
+    .main-title{
+        position: absolute;
+        align-items: center;
+        text-align: center;
+        bottom: 50%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        margin-left: 28%;
+        margin-right: 28%;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(5px);
+        border-radius: 20px;
+        animation-name: move;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        a{
+            text-decoration: none;
+            h1{
+                font-family: $textos-font;
+                font-size: 3em;
+                color: $color-text;
+            }
+        }    
+    }
 }
 
 
 
-.main-title{
-    position: absolute;
-    align-items: center;
-    text-align: center;
-    bottom: 50%;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    width: 60vw;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 20px;
-    animation-name: move;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    a{
-        text-decoration: none;
-        h1{
-            font-family: $textos-font;
-            font-size: 3em;
-            color: $color-text;
-        }
-    }    
-}
 
 @keyframes move{
     0%{
@@ -157,3 +142,37 @@
 }
 
 // HEADER CAROUSEL AND TEXT STYLES END-------------->
+
+@media screen and (max-width: 940px){
+    .carousel-inner{
+        .main-title{
+            a{
+                h1{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 680px){
+    .carousel-inner{
+        .main-title{
+            a{
+                h1{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 520px){
+    .carousel-inner{
+        .main-title{
+            a{
+                h1{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}

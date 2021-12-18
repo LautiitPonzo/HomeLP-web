@@ -72,7 +72,7 @@
         <div class="style-border">
             <img src="../imagenes/propiedad-1.jpg" alt="Propiedad ubicada en Tigre" class="wrap-property">
 
-            <div>
+            <div class="location-icon-features">
                 <span><i class="fas fa-map-marker-alt"></i>Corredor Bancalari, Tigre</span>
             </div>
 
@@ -88,7 +88,7 @@
         <div class="style-border">
             <img src="../imagenes/propiedad-2.jpg" alt="Propiedad ubicada en El Golf, Nordelta" class="wrap-property">
 
-            <div>
+            <div class="location-icon-features">
                 <span><i class="fas fa-map-marker-alt"></i>El Golf, Nordelta</span>
             </div>
 
@@ -105,7 +105,7 @@
         <div class="style-border">
             <img src="../imagenes/propiedad-3.jpg" alt="Frente de propiedad ubicada en El Golf, Nordelta" class="wrap-property">
 
-            <div>
+            <div class="location-icon-features">
                 <span><i class="fas fa-map-marker-alt"></i>El Golf, Nordelta</span>
             </div>
 
@@ -123,7 +123,7 @@
         <div class="style-border">
             <img src="../imagenes/propiedad-4.jpg" alt="Interior de propiedad ubicada en Palermo" class="wrap-property">
 
-            <div>
+            <div class="location-icon-features">
                 <span><i class="fas fa-map-marker-alt"></i>Palermo, Capital Federal</span>
             </div>
 
@@ -140,7 +140,7 @@
         <div class="style-border">
             <img src="../imagenes/propiedad-5.jpg" alt="Interior de propiedad ubicada en Azcucena Villaflor" class="wrap-property">
 
-            <div>
+            <div class="location-icon-features">
                 <span><i class="fas fa-map-marker-alt"></i>Azucena Villaflor, Puerto Madero</span>
             </div>
 
@@ -157,7 +157,7 @@
         <div class="style-border">
             <img src="../imagenes/propiedad-6.jpg" alt="Cocina de propiedad ubicada en Castañeda" class="wrap-property">
 
-            <div>
+            <div class="location-icon-features">
                 <span><i class="fas fa-map-marker-alt"></i>Castañeda, Belgrano Chico</span>
             </div>
 
@@ -174,38 +174,43 @@
 
     <!-------------------------------------FOOTER----------------------------------------->
     <footer id="footer">
-        <section class="footer-logo">
+        <section class="footer-content">
+          <div class="footer-logo">
             <a href="../../index.html">HomeLP</a>
-        </section>
-
-        <section class="footer-nav">
+          </div>
+    
+          <div class="footer-nav">
             <nav class="nav flex-column">
-                <ul class="footer-list">
-                    <li><a href="../paginas/alquilar.html">Alquiler</a></li>
-                    <li><a href="../paginas/comprar.html">Comprar</a></li>
-                    <li><a href="../paginas/nosotros.html">Nosotros</a></li>
-                </ul>
+              <ul class="footer-list">
+                <li><a href="../paginas/alquilar.html">Alquiler</a></li>
+                <li><a href="../paginas/comprar.html">Comprar</a></li>
+                <li><a href="../paginas/nosotros.html">Nosotros</a></li>
+              </ul>
             </nav>
-        </section>
-
-        <section class="email-contact">
-            <input type="email" placeholder="Introduzca su email">
-            <button type="submit">Enviar</button>
-        </section>
-
-        <section class="social-container">
+          </div>
+    
+          <div class="input-group email-contact w-auto d-flex mb-3">
+            <input type="text" class="form-control" placeholder="Introducir email" aria-label="Introducir email"
+              aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-send" type="button">Button</button>
+            </div>
+          </div>
+    
+          <div class="social-container">
             <ul>
-                <li><a href="https://www.instagram.com/" class="instagram"><i class="fab fa-instagram-square"></i></a></li>
-                <li><a href="https://twitter.com/" class="twitter"><i class="fab fa-twitter-square"></i></a></li>
-                <li><a href="https://es-la.facebook.com/" class="facebook"><i class="fab fa-facebook-square"></i></a></li>
+              <li><a href="https://www.instagram.com/" class="instagram"><i class="fab fa-instagram-square"></i></a></li>
+              <li><a href="https://twitter.com/" class="twitter"><i class="fab fa-twitter-square"></i></a></li>
+              <li><a href="https://es-la.facebook.com/" class="facebook"><i class="fab fa-facebook-square"></i></a></li>
             </ul>
+          </div>
         </section>
-
-        <section class="copy">
-            <hr>
-            <span class="copyright">&copy;2021 | Todos los Derechos Reservados</span>
-        </section>
-    </footer>
+    
+        <div class="copy">
+          <hr>
+          <span class="copyright">&copy;2021 | Todos los Derechos Reservados</span>
+        </div>
+      </footer>
 
     <!-- BOOTSTRAP SCRIPT -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
